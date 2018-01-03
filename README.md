@@ -1,6 +1,10 @@
 # Migration notes Godot 2 -> Godot 3
 
-Here are my notes so far or moving from Godot 2 to Godot 3 with emphasis on coding. Please correct and add as you see fit:
+Notes for migrating Godot 2 code to Godot 3.
+
+## Contributing
+
+If you have found something yourself, please fork this repository, edit this file and place your notes at a fitting chapter. Then send a pull request. Thanks for contributing.
 
 # engine.cfg -> project.godot
 
