@@ -139,21 +139,71 @@ Additionally, subproperties can be directly accessed and modified now. So positi
 
 Use get_visible_rect instead
 
-## KinematicBody2D (@gururise)
+### extends -> is
+
+Use `is` instead of `extends` when checking if object is of the specified type.
+Use `extends` when inheriting a class (same as v2).
+* v2: if x extends y:
+* v3: if x is y:
+
+### Boolean must be explicitly cast to integer
+
+* v2: print(true + 1)
+* v3: print(int(true) + 1)
+
+### KinematicBody2D (@gururise)
 
 * v2: move(Vector2)
 * v3: move_and_slide(Vector2)
 
-## RawArray -> PoolByteArray (@mhilbrunner)
+### RawArray -> PoolByteArray (@mhilbrunner)
 
 RawArray is PoolByteArray now
 
-## New Array types
+### New Array types
 
 * Vector2Array is now PoolVector2Array
 * Vector3Array is now PoolVector3Array
 * ColorArray is now PoolColorArray
 
-## z => z_index
+### z => z_index
 
-* [Parameter "z" is renamed to "z_index" on Node2D](https://github.com/godotengine/godot/pull/15191) (@Jerome67000)
+* [Parameter "z" is renamed to "z\_index" on Node2D](https://github.com/godotengine/godot/pull/15191) (@Jerome67000)
+
+### Image & InputEvent -> Resource
+
+InputEvent and Image are now Resource
+
+### Matrix3 -> Basis
+
+Matrix3 is renamed to Basis
+
+### Matrix32 -> Transform2D
+
+Matrix32 is renamed to Transform2D
+
+### Patch9Frame -> NinePatchRect
+
+Patch9Frame is renamed to NinePatchRect
+
+### opacity -> modulate.a
+
+Use `modulate.a` when referring to the opacity of a CanvasItem
+
+### Dictionary.to\_json -> to\_json
+
+`from_json` and `to_json` are now built-in (@GDScript)
+
+### No more ERR\_WTF
+
+ERR\_WTF is deprecated in v3
+
+### Key constant changes
+
+* Main enter/return (16777221): KEY\_RETURN is renamed to KEY\_ENTER
+* Numpad enter (16777222): KEY\_ENTER is renamed to KEY\_KP\_ENTER 
+* Old KEY\_KP\_ENTER constant (16777344) is deprecated
+
+### Singleton changes
+
+Short singleton names are deprecated: AS, PS, PS2D, SS, SS2D, TS, VS
