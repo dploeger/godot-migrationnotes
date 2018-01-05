@@ -18,29 +18,29 @@ _process, _input etc will be called by default if they are present in the script
 
 In some cases, particularly in _physics_process or _process, you may need is_action_just_pressed rather than is_action_pressed (and likewise for is_action_just_released). note: this is unverified/unexplored
 
-### Enums
+## Enums
 
 You can [export enums](https://github.com/godotengine/godot/pull/12952) now.
 
-### Dictionaries
+## Dictionaries
 
 Dictionaries will be sorted by key insertion order when using a for loop to iterate over them. So if you load some JSON you will get keys in the same order as in the JSON file. (ref https://godotengine.org/qa/11570/will-gdscript-change-in-godot-3-0)
 
-### Loops
+## Loops
 
 for i in 10: print(i)   # like Cobra, yay!
 
-### match statement
+## match statement
 http://docs.godotengine.org/en/latest/learning/scripting/gdscript/gdscript_basics.html#match
 
-### Feature tags
+## Feature tags
 Platform-specific [project settings via feature tags](https://twitter.com/reduzio/status/887337781642616832?lang=en).
 
-### Named Physics layers
+## Named Physics layers
 
 Physics layers, both 2D and 3D, can now be named in the settings
 
-### Signals
+## Signals
 
 Some signal names have been changed:
 
@@ -49,7 +49,9 @@ Some signal names have been changed:
 * input_event => gui_input
 * _on_ScaleTween_tween_complete => _on_ScaleTween_tween_completed
 
-### Audio Engine
+* PopupMenu: item_pressed => id_pressed
+
+## Audio Engine
 
 [Big changes in the audio engine](https://godotengine.org/article/godot-30-new-internals-progress-report-4)
 
@@ -60,14 +62,14 @@ Some signal names have been changed:
 	* AudioSource, which works for 3D positional audio.
 	* AudioSource2D, which is the same but for 2D.
 
-### Import changes
+## Import changes
 
 [Overhauled import process](https://godotengine.org/article/godot-30-new-internals-progress-report-4)
 
 * v3 can automatically import many types of assets, placed directly in the project, resulting in fewer steps for developers
 * new import dock to change options, located next to "Scene" tab
 
-### Images as StreamTextures
+## Images as StreamTextures
 
 Images are now available as StreamTextures. ImageTextures only exist for compatibility reasons and scripting.
 
