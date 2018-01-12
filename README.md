@@ -209,3 +209,17 @@ ERR\_WTF is deprecated in v3
 ### Singleton changes
 
 Short singleton names are deprecated: AS, PS, PS2D, SS, SS2D, TS, VS
+
+### Property changes
+
+From: https://github.com/godotengine/godot/pull/15611#issue-287951575
+
+* PROPERTY_USAGE_NOEDITOR is now PROPERTY_USAGE_STORAGE | PROPERTY_USAGE_NETWORK, without PROPERTY_USAGE_INTERNAL
+* AnimationPlayer.playback/play became AnimationPlayer.current_animation, with a backward-compatibility fallback. I think I tested this part, but slight bugs are possible.
+* Node.filename, Node.name and Node.owner might generate some GDScript errors about shadowing.
+* ScrollContainer.h_scroll and ScrollContainer.v_scroll are now scroll_horizontal_enabled and scroll_vertical_enabled.
+* CanvasLayer.rotation and Polygon2D.texture_rotation were in degrees, while the new property is in radians. Likely to break a few projects.
+* Used OS.window_borderless instead of OS.borderless_window, so we might add a group at a later point.
+* Unbound TextEdit.set_max_chars, but added potential bindings for later on, since it wasn't used anywhere. Now I see there is an issue for set_wrap as well, might unbind it as well...
+* OS.window_title, Physics{,2D}ShapeQueryParameters.shape and Viewport.attach_to_screen_rect lack getters, so I didn't bind them.
+Added a setter for VehicleBody.linear_velocity, hopefully it works. All the while someone made it extend RigidBody.
