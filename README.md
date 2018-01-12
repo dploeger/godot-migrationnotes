@@ -50,6 +50,8 @@ Some signal names have been changed:
 * _on_ScaleTween_tween_complete => _on_ScaleTween_tween_completed
 
 * PopupMenu: item_pressed => id_pressed
+* Node: tree_exited => tree_exiting
+  * tree_exited still exists, but refers to, when then node finally exited the tree. tree_exiting is emitted while the node is exiting the tree.
 
 ## Audio Engine
 
