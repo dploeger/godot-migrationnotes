@@ -52,6 +52,7 @@ Some signal names have been changed:
 * PopupMenu: item_pressed => id_pressed
 * Node: tree_exited => tree_exiting
   * tree_exited still exists, but refers to, when then node finally exited the tree. tree_exiting is emitted while the node is exiting the tree.
+* AnimationPlayer: finished() => animation_finished(animation_name)
 
 ## Audio Engine
 
