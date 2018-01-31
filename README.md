@@ -75,6 +75,10 @@ Some signal names have been changed:
 
 Images are now available as StreamTextures. ImageTextures only exist for compatibility reasons and scripting.
 
+## Font extension
+
+Bitmap font .fnt files now have the extension .font.
+
 ## API changes
 
 ### Forbidden variable names (@puppetmaster-)
