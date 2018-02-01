@@ -106,6 +106,7 @@ Most commonly used variable designations that are now internal used in Godot 3
 * name
 * filename
 * owner
+* char
 
 ### Direct accessors
 
