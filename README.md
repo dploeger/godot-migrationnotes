@@ -220,6 +220,10 @@ ERR\_WTF is deprecated in v3
 
 Short singleton names are deprecated: AS, PS, PS2D, SS, SS2D, TS, VS
 
+### ColorRamp -> Gradient
+
+v3 also removes all of the 's' functions (get_colors, get_offsets, set_colors, set_offsets) that operated on Array built-ins.
+
 ### Property changes
 
 From: https://github.com/godotengine/godot/pull/15611#issue-287951575
