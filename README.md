@@ -42,7 +42,7 @@ Physics layers, both 2D and 3D, can now be named in the settings
 
 ## Signals
 
-Some signal names have been changed:
+Some signal names have been changed. They mostly moved from present tense to past tense:
 
 * mouse_enter => mouse_entered
 * mouse_exit => mouse_exited
@@ -53,6 +53,8 @@ Some signal names have been changed:
 * Node: tree_exited => tree_exiting
   * tree_exited still exists, but refers to, when then node finally exited the tree. tree_exiting is emitted while the node is exiting the tree.
 * AnimationPlayer: finished() => animation_finished(animation_name)
+* AnimatedSprite: finished() => animation_finished()
+* RigidBody2D: body_enter_shape(...) => body_shape_entered()
 
 ## Audio Engine
 
