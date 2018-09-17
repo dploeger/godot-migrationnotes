@@ -6,6 +6,14 @@ Notes for migrating Godot 2 code to Godot 3.
 
 If you have found something yourself, please fork this repository, edit this file and place your notes at a fitting chapter. Then send a pull request. You can also use Github's own "Edit file"-feature. Thanks for contributing.
 
+List of current contributors:
+
+* @Kriet108
+* @ghost
+* @pwab
+* @swenner
+* @dploeger
+
 # engine.cfg -> project.godot
 
 engine.cfg was renamed to project.godot (@cbscribe)
