@@ -189,6 +189,10 @@ RawArray is PoolByteArray now
 
 InputEvent and Image are now Resource
 
+### InputEvent changes
+
+InputEvent::type was removed. "is InputEventKey", "is InputEventMouseMotion" etc. should be used. InputEventMouseMotion::pos was renamed to InputEventMouseMotion::postion
+
 ### Matrix3 -> Basis
 
 Matrix3 is renamed to Basis
@@ -238,6 +242,10 @@ From: https://github.com/godotengine/godot/pull/15611#issue-287951575
 * CanvasLayer.rotation and Polygon2D.texture_rotation were in degrees, while the new property is in radians. Likely to break a few projects.
 * Used OS.window_borderless instead of OS.borderless_window, so we might add a group at a later point.
 * Unbound TextEdit.set_max_chars, but added potential bindings for later on, since it wasn't used anywhere. Now I see there is an issue for set_wrap as well, might unbind it as well...
+
+### Method changes
+
+Spatial::look_at_from_pos(pos, target, up) was renamed to look_at_from_position(pos, target, up)
 
 ### Shape owners
 
